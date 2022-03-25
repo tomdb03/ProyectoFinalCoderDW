@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Las Pelis de Siempre</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a class="refLogo" href="index.html"><img class="logo" src="images/logo.png"
+                        alt="Logo de Las Pelis de Siempre"></a> </li>
+                <ul>
+                    <li> <a href="index.html">Inicio</a> </li>
+                    <li> <a href="peliculas.html">Pel&iacute;culas</a> </li>
+                    <li> <a href="staff.html">Staff</a> </li>
+                    <li> <a href="lugar.html">Lugar</a> </li>
+                    <li> <a href="contacto.html">Contacto</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Contacto</h1>
+            <p class="parrafoDescriptivo">Envíanos tu mensaje! Completa el formulario y te responderemos rápidamente.
+            </p>
+            <form class="formContainer">
+                <p class="campos">
+                    <label for="nombre">Nombre completo
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input class="inputContacto" type="text" name="nombre" placeholder="Nombre completo">
+                </p>
+                <p class="campos">
+                    <label for="email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input class="inputContacto" type="email" name="email" placeholder="email@correo.com">
+                </p>
+                <p class="campos">
+                    <label for="celular">Celular
+                    </label>
+                    <input class="inputContacto" type="text" name="celular" placeholder="Celular">
+                </p>
+                <p class="campos">
+                    <label for="mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea name="mensaje" placeholder="Escriba aquí su mensaje"></textarea>
+                </p>
+                <div class="terminos">
+                    <input type="checkbox" name="acepta" value="1">
+                    <p>Aceptar los <a href="#">Términos y Condiciones</a><span class="obligatorio"> *</span></p>
+                </div>
+                <div class="containerBotones">
+                    <input class="botones" type="reset" value="Limpiar">
+                    <input class="botones" type="submit" value="Enviar">
+                </div>
+                <p class="aviso">
+                    <span class="obligatorio"> * </span>Estos campos son obligatorios.
+                </p>
+            </form>
+            <div class="nroRedes">
+                <p>También te dejamos nuestro número y redes sociales</p>
+                <ul>
+                    <li>📞 - 0123456789</li>
+                    <li>📷 - LasPelisDeSiempre</li>
+                    <li>🐦 - LasPelisDeSiempre</li>
+                </ul>
+            </div>
+        </main>
+        <footer>
+            <a class="wpp" href="https://api.whatsapp.com/send?phone=0123456789">Envíanos un mensaje de WhatsApp</a>
+            <div class="txtFooter">
+                <p>Creado por <span class="negrita">Tom&aacute;s Dalla Bona</span>. Estudiante de <a class="linkCoder"
+                        href="https://www.coderhouse.com/">Coderhouse</a>.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
