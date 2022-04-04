@@ -32,8 +32,7 @@ body{
 .containercss{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 95px auto 80px;
-    height: 200vh;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "header"
                          "main"
                          "footer";
@@ -58,14 +57,19 @@ footer{
     grid-area: footer;
     background-color: #221F1F;
     width: 100%;
+    margin-top: 70px;
 }
 
 nav{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; */
     padding: 0 10% 0 10%;
-    align-items: baseline;
+    align-items: center;
+}
+
+.fgrow{
+    flex-grow: 0;
 }
 
 h1{
@@ -107,11 +111,16 @@ nav ul{
 }
 
 nav ul li a{
-    color: #E50914;
+    color: #E50914 !important;
     font-size: large;
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px;
+}
+
+#botonNavbar{
+    color: #E50914;
+    border: solid #E50914;
 }
 
 .logo{
@@ -143,8 +152,7 @@ nav ul li a{
 .preguntasFrecuentes{
     display: flex;
     flex-direction: column;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: 15px 15px 0 15px;
 }
 
 .preguntasFrecuentes h3{
@@ -415,7 +423,7 @@ textarea{
     width:60px;
     height:60px;
     line-height: 63px;
-    bottom:19px;
+    bottom:11px;
     right:19px;
     background:#25d366;
     color:#FFF;
@@ -448,12 +456,6 @@ textarea{
     main{
         margin-left: 5%;
         margin-right: 5%;
-    }
-
-    nav{
-        flex-direction: column;
-        align-items: center;
-        padding: 0 10% 0 10%;
     }
 
     .logo{
@@ -502,7 +504,7 @@ textarea{
 
 
 a:hover{                            /*pseudoclase que le cambia estas propiedades cuando le paso el mouse*/
-    color: #F5F5F1;
+    color: #F5F5F1 !important;
 }
 
 h1:hover{
