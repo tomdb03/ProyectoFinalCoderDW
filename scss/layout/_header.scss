@@ -1,0 +1,48 @@
+// header
+
+header{
+    grid-area: header;
+    background-color: #221F1F;
+    top: 0;
+    width: 100%;
+    padding: 12px;
+    position: sticky;
+}
+
+nav{
+    padding: 0 10% 0 10%;
+    align-items: center;
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: nowrap;
+        li{
+            a{
+                color: #E50914 !important;
+                font-size: large;
+                font-weight: bold;
+                text-transform: uppercase;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+#botonNavbar{
+    color: #E50914;
+    border: solid #E50914;
+}
+
+.logo{
+    height: 70px;
+    width: 70px;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.refLogo{
+    border: none;
+    background-color: transparent;
+}
