@@ -1,91 +1,109 @@
-// globales
+/* globales */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');    /*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*Google Fonts*/
 
-:root{
-    --primario: #B81D24;
-    --secundario: #E50914;
-    --blanco: #F5F5F1;
-    --negrohf: #221F1F;
-    --negro: #000;
-}
+// :root{
+//     --primario: #B81D24;
+//     --secundario: #E50914;
+//     --blanco: #F5F5F1;
+//     --negrohf: #221F1F;
+//     --negro: #000;
+// }
 
 $colorPrimario: #B81D24;
+$colorSecundario: #E50914;
+$colorBlanco: #F5F5F1;
+$colorNegroHF: #221F1F;
+$colorNegro: #000;
 
-*{
+$boxShadowClara: 1px 1px 3px 1px $colorNegroHF;
+$boxShadowOscura: 1px 1px 3px 1px $colorNegro;
+$boxShadowBlanca: 1px 1px 3px 1px $colorBlanco;
+
+$fondoDegradado: linear-gradient(-45deg, $colorNegroHF 0%, $colorPrimario 50%, $colorSecundario 100%);
+$fondoNegro: linear-gradient(top, $colorNegroHF, $colorNegro);
+
+* {
     margin: 0;
-    padding: 0;                                                      /*Reset*/
+    padding: 0;
+    /*Reset*/
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background-color: $colorPrimario;
     line-height: inherit;
     color: inherit;
 }
 
-main{
+main {
     grid-area: main;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-p{
+p {
     margin-bottom: 0;
 }
 
-a{
+a {
     text-decoration: none;
-    &:hover{                            /*pseudoclase que le cambia estas propiedades cuando le paso el mouse*/
-        color: #F5F5F1 !important;
+
+    &:hover {
+        /*pseudoclase que le cambia estas propiedades cuando le paso el mouse*/
+        color: $colorBlanco !important;
+        font-weight: bold;
     }
 }
 
-ul{
+ul {
     margin-bottom: 0;
 }
 
-.containercss{
+.containercss {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: "header"
-                         "main"
-                         "footer";
+        "main"
+        "footer";
 }
 
-.fgrow{
+.fgrow {
     flex-grow: 0;
 }
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
     width: 35%;
     font-weight: 600;
     font-size: 20px;
-    color: #F5F5F1;
-    background-color: #E50914;
-    border: 5px solid #f5f5f1;
+    color: $colorBlanco;
+    background-color: $colorSecundario;
+    border: 5px solid $colorBlanco;
     border-radius: 6px;
     padding: 10px;
-    margin: 25px auto 20px auto;
+    margin: 35px auto 20px auto;
     transition: all 2s ease;
-    &:hover{
-        box-shadow: 1px 1px 3px 1px #221F1F;
+
+    &:hover {
+        box-shadow: $boxShadowClara;
         transform: translate(5px, 0px);
     }
 }
 
-h3{
+h3 {
     font-size: inherit;
     font-weight: bold;
 }
 
-.parrafoDescriptivo{
+.parrafoDescriptivo {
+    color: $colorBlanco;
     text-align: center;
     padding: 8px;
     font-size: large;
@@ -94,22 +112,23 @@ h3{
     margin-right: 10%;
 }
 
-.btn-wsp{
-    position:fixed;
-    width:60px;
-    height:60px;
+.btn-wsp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
     line-height: 63px;
-    bottom:11px;
-    right:19px;
-    background:#25d366;
-    color:#FFF;
-    border-radius:50px;
-    text-align:center;
-    font-size:35px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-    z-index:100;
+    bottom: 11px;
+    right: 19px;
+    background: #25d366;
+    color: $colorBlanco;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
     transition: all 300ms ease;
-    &:hover{
+
+    &:hover {
         background: #20ba5a;
     }
 }

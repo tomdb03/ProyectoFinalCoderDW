@@ -1,0 +1,40 @@
+/* lugar */
+
+.lugarContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 45px;
+    border: solid $colorBlanco;
+    border-radius: 8px;
+    background: $fondoNegro;
+
+    .maps {
+        height: 415px;
+        width: 200px;
+        padding-right: 10px;
+
+        &:hover {
+            transform: scale(1.015);
+        }
+    }
+
+    .imagenesLugar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
+        grid-gap: 15px;
+
+        .fotoLugar {
+            display: block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+            &:hover {
+                transform: scale(1.015);
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+/* películas */
+
+.peliculasContainer {
+    border: solid $colorBlanco;
+    border-radius: 8px;
+    padding: 25px 0;
+    background: $fondoNegro;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 280px;
+    justify-items: center;
+    max-height: 700px;
+    overflow-y: overlay;
+    overflow-x: hidden;
+
+    .peli {
+        padding: 30px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .peliImg {
+            display: block;
+            height: 200px;
+            width: 115px;
+            object-fit: cover;
+            border: solid 3px $colorBlanco;
+            border-radius: 8px;
+
+            &:hover {
+                box-shadow: $boxShadowBlanca;
+            }
+        }
+
+        .peliBody {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 130%;
+            padding: 7px;
+
+            .peliTit {
+                font-size: large;
+                padding: 3px;
+                margin-bottom: 0;
+                font-weight: bold;
+                line-height: inherit;
+                color: $colorBlanco;
+            }
+
+            .peliGenAn {
+                font-size: medium;
+                padding: 3px;
+                color: $colorBlanco;              
+            }
+
+            .peliBts {
+                padding: 3px;
+                display: flex;
+                flex-direction: row;
+
+                .peliBoton {
+                    padding: 5px;
+                    margin: 2px;
+                    border: solid 2px $colorBlanco;
+                    border-radius: 8px;
+                    background-color: $colorSecundario;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: small;
+
+                    &:hover {
+                        background-color: $colorNegroHF;
+                        color: $colorSecundario;
+                    }
+
+                    &:focus {
+                        background-color: $colorBlanco;
+                    }
+                }
+            }
+        }
+    }
+}

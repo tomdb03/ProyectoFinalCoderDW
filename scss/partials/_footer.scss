@@ -1,0 +1,21 @@
+/* footer */
+
+footer {
+    grid-area: footer;
+    background-color: $colorNegroHF;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.txtFooter {
+    padding: 30px;
+    color: $colorSecundario;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.linkCoder {
+    color: $colorSecundario;
+}

@@ -1,25 +1,27 @@
-// header
+/* header */
 
-header{
+header {
     grid-area: header;
-    background-color: #221F1F;
+    background-color: $colorNegroHF;
     top: 0;
     width: 100%;
     padding: 12px;
     position: sticky;
 }
 
-nav{
+nav {
     padding: 0 10% 0 10%;
     align-items: center;
-    ul{
+
+    ul {
         display: flex;
         flex-direction: row;
         align-items: center;
         flex-wrap: nowrap;
-        li{
-            a{
-                color: #E50914 !important;
+
+        li {
+            a {
+                color: $colorSecundario !important;
                 font-size: large;
                 font-weight: bold;
                 text-transform: uppercase;
@@ -29,20 +31,21 @@ nav{
     }
 }
 
-#botonNavbar{
-    color: #E50914;
-    border: solid #E50914;
+#botonNavbar {
+    color: $colorSecundario;
+    border: solid $colorSecundario;
 }
 
-.logo{
+.logo {
     height: 70px;
     width: 70px;
-    &:hover{
+
+    &:hover {
         transform: scale(1.1);
     }
 }
 
-.refLogo{
+.refLogo {
     border: none;
     background-color: transparent;
 }

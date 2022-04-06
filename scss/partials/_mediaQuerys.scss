@@ -1,0 +1,52 @@
+/* media querys */
+
+@media screen and (max-width: 768px) {
+    main {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    h1 {
+        font-size: 15px;
+        padding: 6px;
+        margin: 15px auto 10px auto;
+    }
+
+    nav {
+        ul {
+            padding: 4px 0 4px 0;
+        }
+    }
+
+    .btn-wsp {
+        width: 63px;
+        height: 63px;
+        line-height: 66px;
+    }
+
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .peliculasContainer {
+        grid-template-columns: repeat(2, 1fr);
+        max-height: 500px;
+    }
+
+    .containerStaff {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lugarContainer {
+        flex-direction: column;
+
+        .maps {
+            width: 400px;
+            height: 150px;
+            padding: 5px 10px 0 10px;
+            padding-bottom: 10px;
+        }
+    }
+
+}
