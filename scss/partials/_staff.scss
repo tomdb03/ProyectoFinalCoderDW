@@ -7,24 +7,22 @@
     grid-template-rows: auto;
 
     .infoStaff {
-        display: flex;
+        @include flex(inherit,center);
         flex-direction: column;
-        align-items: center;
         padding: 20px;
         background: $fondoDegradado;
         border: solid $colorBlanco;
         border-radius: 8px;
-        margin: 10px;
+        margin: 9px;
 
         &:hover {
             box-shadow: $boxShadowBlanca;
         }
 
         .imagenStaff {
-            display: block;
-            height: 200px;
-            width: 230px;
-            object-fit: cover;
+            @extend %img;
+            height: 100%;
+            width: 100%;
             padding: 10px;
         }
 
@@ -32,6 +30,7 @@
             font-size: medium;
             padding: 10px;
             color: $colorBlanco;
+            text-align: center;
         }
     }
 }

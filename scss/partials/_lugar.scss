@@ -1,18 +1,14 @@
 /* lugar */
 
 .lugarContainer {
-    display: flex;
+    @include flex(space-around, center);
     flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-around;
-    padding: 45px;
-    border: solid $colorBlanco;
-    border-radius: 8px;
-    background: $fondoNegro;
+    padding: 35px;
+    @extend %contenedorNegro;
 
     .maps {
         height: 415px;
-        width: 200px;
+        width: 25%;
         padding-right: 10px;
 
         &:hover {
@@ -27,10 +23,9 @@
         grid-gap: 15px;
 
         .fotoLugar {
-            display: block;
+            @extend %img;
             height: 100%;
             width: 100%;
-            object-fit: cover;
 
             &:hover {
                 transform: scale(1.015);

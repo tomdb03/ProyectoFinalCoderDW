@@ -1,7 +1,6 @@
 /* globales */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');        /*Google Fonts*/
 
 // :root{
 //     --primario: #B81D24;
@@ -17,17 +16,16 @@ $colorBlanco: #F5F5F1;
 $colorNegroHF: #221F1F;
 $colorNegro: #000;
 
-$boxShadowClara: 1px 1px 3px 1px $colorNegroHF;
-$boxShadowOscura: 1px 1px 3px 1px $colorNegro;
-$boxShadowBlanca: 1px 1px 3px 1px $colorBlanco;
+$boxShadowClara: 1px 1px 3px 2px $colorNegroHF;
+$boxShadowOscura: 0px 10px 10px rgba(0, 0, 0, 0.8);
+$boxShadowBlanca: 0px 1px 4px $colorBlanco;
 
 $fondoDegradado: linear-gradient(-45deg, $colorNegroHF 0%, $colorPrimario 50%, $colorSecundario 100%);
 $fondoNegro: linear-gradient(top, $colorNegroHF, $colorNegro);
 
 * {
     margin: 0;
-    padding: 0;
-    /*Reset*/
+    padding: 0;                     /*Reset*/
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
@@ -40,12 +38,6 @@ body {
     color: inherit;
 }
 
-main {
-    grid-area: main;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
 p {
     margin-bottom: 0;
 }
@@ -54,7 +46,6 @@ a {
     text-decoration: none;
 
     &:hover {
-        /*pseudoclase que le cambia estas propiedades cuando le paso el mouse*/
         color: $colorBlanco !important;
         font-weight: bold;
     }
@@ -64,13 +55,19 @@ ul {
     margin-bottom: 0;
 }
 
-.containercss {
+.containercss {                             /* ¿? */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: "header"
         "main"
         "footer";
+}
+
+main {
+    grid-area: main;                             /* ¿? */
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .fgrow {
@@ -80,6 +77,8 @@ ul {
 h1 {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 35%;
     font-weight: 600;
     font-size: 20px;
@@ -110,25 +109,4 @@ h3 {
     margin-bottom: 13px;
     margin-left: 10%;
     margin-right: 10%;
-}
-
-.btn-wsp {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    line-height: 63px;
-    bottom: 11px;
-    right: 19px;
-    background: #25d366;
-    color: $colorBlanco;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 35px;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-    z-index: 100;
-    transition: all 300ms ease;
-
-    &:hover {
-        background: #20ba5a;
-    }
 }

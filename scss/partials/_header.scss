@@ -2,7 +2,7 @@
 
 header {
     grid-area: header;
-    background-color: $colorNegroHF;
+    background: linear-gradient(top, $colorNegro, $colorNegroHF);;
     top: 0;
     width: 100%;
     padding: 12px;
@@ -10,13 +10,12 @@ header {
 }
 
 nav {
-    padding: 0 10% 0 10%;
+    padding: 0 12% 0 12%;
     align-items: center;
 
     ul {
-        display: flex;
+        @include flex(inherit, center);
         flex-direction: row;
-        align-items: center;
         flex-wrap: nowrap;
 
         li {
@@ -34,11 +33,12 @@ nav {
 #botonNavbar {
     color: $colorSecundario;
     border: solid $colorSecundario;
+    background-color: $colorPrimario;
 }
 
 .logo {
-    height: 70px;
-    width: 70px;
+    height: 75px;
+    width: 75px;
 
     &:hover {
         transform: scale(1.1);
