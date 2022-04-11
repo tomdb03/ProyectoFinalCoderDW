@@ -1,36 +1,11 @@
 /* staff */
 
-.containerStaff {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+.staffContainer {
+    margin: 0px 18% 0px 18%;
+    padding: 30px;
+    @extend %contenedorNegro;
 
-    .infoStaff {
-        @include flex(inherit,center);
-        flex-direction: column;
-        padding: 20px;
-        background: $fondoDegradado;
-        border: solid $colorBlanco;
-        border-radius: 8px;
-        margin: 9px;
-
-        &:hover {
-            box-shadow: $boxShadowBlanca;
-        }
-
-        .imagenStaff {
-            @extend %img;
-            height: 100%;
-            width: 100%;
-            padding: 10px;
-        }
-
-        .caption {
-            font-size: medium;
-            padding: 10px;
-            color: $colorBlanco;
-            text-align: center;
-        }
+    .carrCap {
+        font-weight: bold;
     }
 }

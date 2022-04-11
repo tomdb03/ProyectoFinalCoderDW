@@ -7,9 +7,6 @@
     grid-auto-rows: auto;
     justify-items: center;
     align-items: center;
-    max-height: 600px;
-    overflow-y: overlay;
-    overflow-x: hidden;
     @extend %contenedorNegro;
 
     .peli {
@@ -20,7 +17,7 @@
         .peliImg {
             @extend %img;
             height: 170px;
-            width: 115px;
+            width: 120px;
             border: solid 3px $colorBlanco;
             border-radius: 8px;
 
