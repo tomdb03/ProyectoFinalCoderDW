@@ -3,7 +3,7 @@
 .peliculasContainer {
     padding: 25px 5px 30px 5px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: auto;
     justify-items: center;
     align-items: center;

@@ -30,8 +30,7 @@
     }
 
     .peliculasContainer {
-        grid-template-columns: repeat(2, 1fr);
-        max-height: 450px;
+        grid-template-columns: 1fr 1fr;
     }
 
     .lugarContainer {
@@ -50,7 +49,7 @@
 @media screen and (max-width: 500px) {
 
     .peliculasContainer {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .btn-wsp {
