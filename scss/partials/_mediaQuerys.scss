@@ -2,14 +2,14 @@
 
 @media screen and (max-width: 768px) {
     main {
-        margin-left: 5%;
-        margin-right: 5%;
-    }
+        margin-left: 5% !important;
+        margin-right: 5% !important;
 
-    h1 {
-        font-size: 15px;
-        padding: 6px;
-        margin: 15px auto 10px auto;
+        h1 {
+            font-size: 19px !important;
+            padding: 6px;
+            margin: 17px auto 11px auto !important;
+        }
     }
 
     nav {
@@ -42,6 +42,10 @@
             padding: 5px 10px 0 10px;
             padding-bottom: 15px;
         }
+    }
+
+    .formContainer {
+        width: 95%;
     }
 
 }
