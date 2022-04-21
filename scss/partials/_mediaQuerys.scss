@@ -33,6 +33,10 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .staffContainer {
+        margin: 0;
+    }
+
     .lugarContainer {
         flex-direction: column;
 
@@ -45,9 +49,13 @@
     }
 
     .formContainer {
-        width: 95%;
+        width: 100%;
+        .campos{
+            textarea{
+                height: 95px;
+            }
+        }
     }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -60,6 +68,14 @@
         height: 50px;
         width: 50px;
         line-height: 53px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+
+    .carrCap{
+        display: none;
     }
 
 }
