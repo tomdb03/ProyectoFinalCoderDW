@@ -1,14 +1,24 @@
 /* media querys */
 
+@media screen and (max-width: 1024px) {
+    .peliculasContainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 @media screen and (max-width: 768px) {
     main {
         margin-left: 5% !important;
         margin-right: 5% !important;
 
         h1 {
-            font-size: 19px !important;
+            font-size: 30px !important;
             padding: 6px;
             margin: 17px auto 11px auto !important;
+        }
+
+        .subtituloInicio {
+            font-size: 26px;
         }
     }
 
@@ -57,9 +67,18 @@
             }
         }
     }
+
+    footer {
+        margin-top: 20px;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
+    main {
+        .subtituloInicio {
+            font-size: 23px;
+        }
+    }
 
     .peliculasContainer {
         grid-template-columns: 1fr;
@@ -71,19 +90,15 @@
         }
     }
 
-
     .btn-wsp {
         height: 50px;
         width: 50px;
         line-height: 53px;
     }
-
 }
 
-@media screen and (max-width: 360px) {
-
+@media screen and (max-width: 351px) {
     .carrCap {
         display: none;
     }
-
 }
